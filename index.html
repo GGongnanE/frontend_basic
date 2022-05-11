@@ -3,6 +3,16 @@
 <head>
     <title>GGne's Website</title>
     <link rel="stylesheet" href="../practice.css" type="text/css">
+    <script type="text/javascript">
+        function doSomething() {
+            let a = document.getElementById("inputA").value;
+            let b = document.getElementById("inputB").value;
+
+            document.getElementById("valueA").innerHTML = a;
+            document.getElementById("valueB").innerHTML = b;
+            document.getElementById("valueC").innerHTML = Number(a) + Number(b);
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -16,6 +26,18 @@
     <h3>세 번째 크기 헤드라인</h3>
     <h4>네 번 째</h4>
     <h5>다섯 번 째</h5>
+
+    <label for="inputA"> a
+        <input id="inputA" value=1 onkeyup=doSomething()>
+    </label>
+
+    <label for="inputB"> b
+        <input id="inputB" value=2 onkeyup=doSomething()>
+    </label>
+
+    <p>
+        <span id="valueA">1</span> + <span id="valueB">2</span> = <span id="valueC">3</span> 입니다.
+    </p>
 
     <p>동해물과 백두산이 마르고 닳도록</p>
     <a href="https://google.com">Go to Google</a>
