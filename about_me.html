@@ -53,16 +53,38 @@
 
     <!-- 컨테이너를 이용한 여백관리 -->
     <div class="container">
-        <button onclick="whatTimeIsIt()">현재 시각</button>
-        <br>
-        <hr>
+        <div class="row">
+            <!-- 9:3으로 구분 -->
+            <div class="col-9"> 
+                <h1>About me</h1>
+                <h2>I'm live in ICN, South Korea</h2>
+                
+                <p>HTML, CSS, JS, DJango로 웹사이트를 만듭니다.</p>
+                <a href="../index.html">첫 화면으로 돌아가기</a>
+            </div>
+            <div class="col-3">
+                <!-- img-fluid : 이미지가 동적으로 크기 조정됨. -->
+                <img src="../images/human.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
 
-        <h1>About me</h1>
-        <h2>I'm live in ICN, South Korea</h2>
-        <img src="../images/human.jpg" width="400">
-        
-        <p>HTML, CSS, JS, DJango로 웹사이트를 만듭니다.</p>
-        <a href="../index.html">첫 화면으로 돌아가기</a>
+    <div class="container">
+        <!-- 2:1:1으로 구분 -->
+        <div class="row">
+            <div class="col-12">
+                <h2>PortFolio</h2>
+            </div>
+            <div class="col-sm col-lg-6 bg-warning text-white">
+                <img src="./images/popol_img1.jpg" class="img-fluid">
+            </div>
+            <div class="col-sm col-lg-3">
+                <img src="./images/popol_img2.jpg" class="img-fluid">
+            </div>
+            <div class="col-sm col-lg-3">
+                <img src="./images/popol_img3.jpg" class="img-fluid">
+            </div>
+        </div>
     </div>
 
     <!-- add bootstrap bundle (js) -->
